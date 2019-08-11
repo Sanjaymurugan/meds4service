@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <!--<me.relex.circleindicator.CircleIndicator-->
+        <!--android:id="@+id/cIndicator"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginTop="160dp"/>-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_upload"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/viewPager"
+        app:cardElevation="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp">
+
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/upload"
+            android:layout_margin="10dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_quickreorder"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/viewPager"
+        app:cardElevation="5dp"
+        android:layout_toRightOf="@+id/cv_upload"
+        android:layout_margin="15dp" >
+
+        <ImageView
+            android:id="@+id/quickreorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/quickreorders"
+            android:layout_margin="10dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_myorders"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/viewPager"
+        app:cardElevation="5dp"
+        android:layout_toRightOf="@+id/cv_quickreorder"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/myorders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/myorders"
+            android:layout_margin="10dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/meds_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cv_quickreorder"/>
+
+</RelativeLayout>

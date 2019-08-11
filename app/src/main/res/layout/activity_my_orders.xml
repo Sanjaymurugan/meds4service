@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrders">
+
+    <TextView
+        android:id="@+id/order_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Medicine name"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/approve1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/approved"
+        android:layout_below="@+id/order_tv"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/Available_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available"
+        android:layout_toRightOf="@+id/approve1"
+        android:layout_below="@+id/order_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"/>
+
+    <ImageView
+        android:id="@+id/approve2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/radio_button"
+        android:layout_below="@+id/approve1"/>
+
+    <TextView
+        android:id="@+id/Packed_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Packed and Shipped"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/approve1"
+        android:layout_toRightOf="@+id/approve2"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"/>
+
+    <ImageView
+        android:id="@+id/approve3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/radio_button"
+        android:layout_below="@+id/approve2"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/YetTobeDelivered_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yet to be Delivered"
+        android:layout_toRightOf="@+id/approve2"
+        android:layout_below="@+id/Packed_tv"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/approve4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/radio_button"
+        android:layout_below="@+id/approve3"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/Delivered_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivered"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/YetTobeDelivered_tv"
+        android:layout_toRightOf="@+id/approve4"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Delivered_tv"
+        android:layout_marginRight="10dp"
+        android:text="Verified"/>
+
+</RelativeLayout>
